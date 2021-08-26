@@ -10059,3 +10059,39 @@ body {
     left: 0;
     margin: 0px 15px 15px 15px;
 }
+
+@media screen and (min-width: 692px){
+    .parent_left{
+        float:left;
+        margin-left:25%;
+    }
+    .parent_right{
+        float:right;
+        margin-right:25%;
+    }
+}
+
+@media screen and (min-width: 325px){
+    .parent_left{
+        float:left;
+    }
+    .parent_right{
+        float:right;
+    }
+}
+
+/*a.copy_yoon:link{*/
+/*    color:red !important;*/
+/*}*/
+/*a.copy_yoon:visited{*/
+/*    color:red !important;*/
+/*}*/
+u.copy_yoon:hover{
+    color:red !important;
+}
+u.copy_oh:hover{
+    color:red !important;
+}
+/*a.copy_yoon:active{*/
+/*    color:red !important;*/
+/*}*/
