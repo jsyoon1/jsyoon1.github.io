@@ -39,6 +39,38 @@ $(document).ready(function () {
             alert("메시지 전송이 실패했습니다. 다시 시도해주세요.");
         });
     })
+
+    $(".copy_yoon").click(function () {
+        // navigator.clipboard.writeText("하나은행 391-910734-92207");
+        // alert("신랑 윤지석 계좌번호가 복사되었습니다.");
+        var inputc = document.body.appendChild(document.createElement("input"));
+        inputc.value = "하나은행 391-910734-92207";
+        // inputc.focus();
+        inputc.select();
+        document.execCommand('copy');
+        inputc.parentNode.removeChild(inputc);
+        alert("신랑 윤지석 계좌번호가 복사되었습니다.");
+    })
+    $(".copy_oh").click(function () {
+        // navigator.clipboard.writeText("카카오뱅크 7979-26-15542");
+
+        var inputc = document.body.appendChild(document.createElement("input"));
+        inputc.value = "카카오뱅크 7979-26-15542";
+        // inputc.focus();
+        inputc.select();
+        document.execCommand('copy');
+        inputc.parentNode.removeChild(inputc);
+        alert("신부 오진아 계좌번호가 복사되었습니다.");
+
+    })
+    // function copy_yoon() {
+    //     navigator.clipboard.writeText("하나은행 391-910734-92207");
+    //     alert("신랑 윤지석 계좌번호가 복사되었습니다.");
+    // }
+    // function copy_oh() {
+    //     navigator.clipboard.writeText("카카오뱅크 7979-26-15542");
+    //     alert("신부 오진아 계좌번호가 복사되었습니다.");
+    // }
 })
 
 // Smooth scroll for links with hashes

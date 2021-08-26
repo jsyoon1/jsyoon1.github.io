@@ -10086,10 +10086,10 @@ body {
 /*a.copy_yoon:visited{*/
 /*    color:red !important;*/
 /*}*/
-u.copy_yoon:hover{
+a.copy_yoon:hover{
     color:red !important;
 }
-u.copy_oh:hover{
+a.copy_oh:hover{
     color:red !important;
 }
 /*a.copy_yoon:active{*/
