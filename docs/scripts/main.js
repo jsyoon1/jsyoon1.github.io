@@ -44,7 +44,7 @@ $(document).ready(function () {
         // navigator.clipboard.writeText("하나은행 391-910734-92207");
         // alert("신랑 윤지석 계좌번호가 복사되었습니다.");
         var inputc = document.body.appendChild(document.createElement("input"));
-        inputc.value = "하나은행 391-910734-92207";
+        inputc.value = "1002707109121 우리은행";
         // inputc.focus();
         inputc.select();
         document.execCommand('copy');
@@ -55,7 +55,7 @@ $(document).ready(function () {
         // navigator.clipboard.writeText("카카오뱅크 7979-26-15542");
 
         var inputc = document.body.appendChild(document.createElement("input"));
-        inputc.value = "카카오뱅크 7979-26-15542";
+        inputc.value = "1002443614335 우리은행";
         // inputc.focus();
         inputc.select();
         document.execCommand('copy');
