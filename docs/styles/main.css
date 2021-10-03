@@ -10080,6 +10080,22 @@ body {
     }
 }
 
+/*@media screen and (min-width: 700px){*/
+/*    .text_size{*/
+/*        font-size: 4.5vw*/
+/*    }*/
+/*}*/
+@media screen and (max-width: 700px){
+    .text_size{
+        font-size: 4.5vw
+    }
+}
+/*@media (min-width: 800px){*/
+/*    .text_size{*/
+/*        font-size: 4.5vw*/
+/*    }*/
+/*}*/
+
 
 /*a.copy_yoon:link{*/
 /*    color:red !important;*/
@@ -10101,7 +10117,4 @@ a.copy_oh:hover{
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-.kasd {
-background-color: #fefbd8;
 }
