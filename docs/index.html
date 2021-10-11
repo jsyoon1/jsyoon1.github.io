@@ -5,19 +5,23 @@
   <title>카카오 메시지템플릿빌더를 이용한 링크보내기</title>
  </head>
  <body>
-  <a href="javascript:void(0);" id="btn" >카카오 링크보내기</a>
-  <!-- Kakao API -->
-  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-  <script>
-    Kakao.init('4892573bcd3f88ca560a9a04853b255c'); //6번 항목에서 발급 받았던 javascript key를 여기에 넣는다.
+ <div id="btnKakao">
+    <img src="/img/sns_kakao.png" id="kakao-link-btn" alt="카카오톡 링크 공유하기">
+</div>
  
- $("#btn").click(function(e) { //jquery를 사용한다 가정
-  e.preventDefault();   //이벤트 버블링 prevent
-  
-  Kakao.Link.sendCustom({
-    templateId: 63290   // 15번 항목에서 확인하였던 이벤트번호 등록 
-  });
- });
-  </script>
+ 
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type='text/javascript'>
+    //<![CDATA[
+    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+    Kakao.init('4892573bcd3f88ca560a9a04853b255c');
+    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+    Kakao.Link.createScrapButton({
+        container: '#kakao-link-btn',
+        requestUrl: 'https://www.1204.kr/',
+        templateId : 63290
+    });
+    //]]>
+</script>
  </body>
 </html>
