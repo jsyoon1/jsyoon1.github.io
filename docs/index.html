@@ -1,27 +1,36 @@
-<!doctype html>
-<html lang="ko">
- <head>
-  <meta charset="UTF-8">
-  <title>카카오 메시지템플릿빌더를 이용한 링크보내기</title>
- </head>
- <body>
- <div id="btnKakao">
-    <img src="/img/sns_kakao.png" id="kakao-link-btn" alt="카카오톡 링크 공유하기">
-</div>
- 
- 
-<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-<script type='text/javascript'>
-    //<![CDATA[
-    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
-    Kakao.init('4892573bcd3f88ca560a9a04853b255c');
-    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-    Kakao.Link.createScrapButton({
-        container: '#kakao-link-btn',
-        requestUrl: 'https://www.1204.kr/',
-        templateId : 63290
-    });
-    //]]>
-</script>
- </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="google" content="notranslate">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+
+    <meta property="og:title" content="윤지석 ♥ 오진아 결혼합니다"/>
+    <meta property="og:site_name" content="윤지석 ♥ 오진아 결혼합니다"/>
+    <meta property="og:description" content="12월 4일 오전 11시 30분"/>
+    <meta property="og:image" content="https://s3.ap-northeast-2.amazonaws.com/mcard.fromtoday.co.kr/w/7XXWAV/photos/7XXWAV_mcard_2021-10-11_69376ab701664cf7b5168a57cbbbe2d1_w1280.jpg"/>
+    <meta property="og:type" content="website"/>
+
+    <title>윤지석 ♥ 오진아 결혼합니다</title>
+  </head>
+  <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <div id="app"></div>
+
+    <script src="//openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=owxv89oy47"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="//mcard.fromtoday.co.kr/mcard/assets/loader.js?1633952419.236156"></script>
+    <script src="/data.js?1633952419.236156"></script>
+    <script>
+      fetchUrl('//mcard.fromtoday.co.kr/mcard/1003/hash.js', function(hash) {
+        lazyLoad("//mcard.fromtoday.co.kr/mcard/1003/m_1003.js", hash.m, function() {
+          lazyLoad("//mcard.fromtoday.co.kr/mcard/1003/v_1003.js", hash.v, function() {
+            lazyLoad("//mcard.fromtoday.co.kr/mcard/1003/a_1003.js", hash.a, function() {
+            });
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
